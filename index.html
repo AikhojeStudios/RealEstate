@@ -1,4 +1,4 @@
-<!DOCTYPE html><!-- v4 -->
+<!DOCTYPE html><!-- v5 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -24,29 +24,27 @@ nav.scrolled .nav-links a{color:var(--mid)}
 .hero-bg{position:absolute;inset:0;background:url('images/hero.jpg') center 45%/cover no-repeat;animation:hzoom 14s ease-out forwards}
 @keyframes hzoom{from{transform:scale(1.06)}to{transform:scale(1)}}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,7,6,.75) 0%,rgba(8,7,6,.15) 50%,transparent 100%)}
-.hero-content{position:relative;z-index:2;padding:0 5rem 6rem;opacity:0;animation:fu 1s .5s forwards}
+.hero-content{position:relative;z-index:2;padding:0 5rem 6rem;animation:fu 1s .3s both}
 @keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 .eyebrow{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
 .hero-title{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,6.5vw,5rem);font-weight:400;line-height:1.1;color:#fff;margin-bottom:1.4rem}
 .hero-title em{font-style:italic;color:#e8c99a}
 .hero-desc{font-size:.9rem;color:rgba(255,255,255,.65);max-width:400px;line-height:1.8;margin-bottom:2.2rem}
-.btn{display:inline-block;padding:.9rem 2.4rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-family:'DM Sans',sans-serif;font-weight:400;text-decoration:none;transition:all .3s;cursor:pointer}
+.btn{display:inline-block;padding:.9rem 2.4rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-family:'DM Sans',sans-serif;font-weight:400;text-decoration:none;transition:all .3s}
 .btn-light{border:1px solid rgba(255,255,255,.55);color:#fff}
-.btn-light:hover{background:#fff;color:var(--ink);border-color:#fff}
+.btn-light:hover{background:#fff;color:var(--ink)}
 .btn-gold{background:var(--gold);color:#fff;border:1px solid var(--gold)}
-.btn-gold:hover{background:#c9a87c;border-color:#c9a87c}
+.btn-gold:hover{background:#c9a87c}
 .btn-dark{background:var(--ink);color:#fff;border:1px solid var(--ink)}
 .btn-dark:hover{background:var(--gold);border-color:var(--gold)}
 
-.stats{background:var(--ink);display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid #1a1a18;opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}
-.stats.vis{opacity:1;transform:none}
+.stats{background:var(--ink);display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid #1a1a18}
 .stat{padding:2.2rem 2rem;border-right:1px solid #1f1f1c;text-align:center}
 .stat:last-child{border-right:none}
 .sn{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:400;color:var(--gold);line-height:1}
 .sl{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:.4rem}
 
-.about{display:grid;grid-template-columns:1fr 1fr;opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
-.about.vis{opacity:1;transform:none}
+.about{display:grid;grid-template-columns:1fr 1fr}
 .about-text{padding:6rem 5rem;background:var(--fog);display:flex;flex-direction:column;justify-content:center}
 .about-img{overflow:hidden}
 .about-img img{width:100%;height:100%;object-fit:cover;display:block;min-height:440px}
@@ -57,8 +55,7 @@ nav.scrolled .nav-links a{color:var(--mid)}
 .gallery{padding:6rem 0;background:var(--white)}
 .gallery-hd{text-align:center;padding:0 2rem 3rem}
 .masonry{columns:3;column-gap:6px;padding:0 6px}
-.gi{break-inside:avoid;margin-bottom:6px;overflow:hidden;position:relative;cursor:pointer;opacity:0;transform:translateY(16px);transition:opacity .5s,transform .5s}
-.gi.vis{opacity:1;transform:none}
+.gi{break-inside:avoid;margin-bottom:6px;overflow:hidden;position:relative}
 .gi img{width:100%;display:block;transition:transform .6s ease}
 .gi:hover img{transform:scale(1.04)}
 .go{position:absolute;inset:0;background:rgba(8,7,6,0);transition:background .4s;display:flex;align-items:flex-end;padding:1.2rem}
@@ -69,16 +66,14 @@ nav.scrolled .nav-links a{color:var(--mid)}
 .services{background:var(--fog);padding:6rem 4rem}
 .services-hd{margin-bottom:3.5rem}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--linen)}
-.sc{background:var(--fog);padding:2.8rem 2.4rem;opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s,background .3s}
-.sc.vis{opacity:1;transform:none}
+.sc{background:var(--fog);padding:2.8rem 2.4rem;transition:background .3s}
 .sc:hover{background:#fff}
 .sc-num{font-family:'Playfair Display',serif;font-size:2.5rem;color:var(--gold);line-height:1;margin-bottom:1rem}
 .sc-name{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:500;margin-bottom:.7rem}
 .sc-desc{font-size:.88rem;line-height:1.7;color:var(--mid)}
 .sc-price{margin-top:1.4rem;font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--gold)}
 
-.process{background:var(--ink);padding:6rem 4rem;opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
-.process.vis{opacity:1;transform:none}
+.process{background:var(--ink);padding:6rem 4rem}
 .process-hd{margin-bottom:3rem}
 .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
 .step{border-top:1px solid #2a2a28;padding-top:1.5rem}
@@ -86,8 +81,7 @@ nav.scrolled .nav-links a{color:var(--mid)}
 .step-title{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:#fff;font-weight:500;margin-bottom:.6rem}
 .step-desc{font-size:.84rem;line-height:1.7;color:rgba(255,255,255,.45)}
 
-.cta{background:var(--fog);padding:8rem 5rem;text-align:center;opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
-.cta.vis{opacity:1;transform:none}
+.cta{background:var(--fog);padding:8rem 5rem;text-align:center}
 .cta-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:400;line-height:1.15;margin-bottom:1rem}
 .cta-title em{font-style:italic;color:var(--gold)}
 .cta-sub{font-size:.9rem;color:var(--mid);margin-bottom:2.5rem;line-height:1.7}
@@ -99,11 +93,12 @@ footer p{font-size:.7rem;color:rgba(255,255,255,.3);letter-spacing:.08em}
 footer a{color:rgba(255,255,255,.4);text-decoration:none;transition:color .3s}
 footer a:hover{color:var(--gold)}
 
-.lb{display:none;position:fixed;inset:0;z-index:999;background:rgba(0,0,0,.93);align-items:center;justify-content:center}
-.lb.open{display:flex}
-.lb img{max-width:92vw;max-height:90vh;object-fit:contain}
-.lb-close{position:absolute;top:1.5rem;right:2rem;font-size:2.2rem;color:rgba(255,255,255,.7);cursor:pointer;line-height:1;transition:color .2s;background:none;border:none}
-.lb-close:hover{color:#fff}
+/* LIGHTBOX */
+#lb{display:none;position:fixed;inset:0;z-index:999;background:rgba(0,0,0,.93);align-items:center;justify-content:center;cursor:pointer}
+#lb.open{display:flex}
+#lb-img{max-width:92vw;max-height:90vh;object-fit:contain;cursor:default}
+#lb-close{position:absolute;top:1.5rem;right:2rem;font-size:2.5rem;color:rgba(255,255,255,.7);cursor:pointer;background:none;border:none;line-height:1}
+#lb-close:hover{color:#fff}
 
 @media(max-width:900px){
   nav,nav.scrolled{padding:1rem 1.5rem}
@@ -147,7 +142,7 @@ footer a:hover{color:var(--gold)}
   </div>
 </section>
 
-<div class="stats" id="stats">
+<div class="stats">
   <div class="stat"><div class="sn">11+</div><div class="sl">Years Experience</div></div>
   <div class="stat"><div class="sn">24h</div><div class="sl">Delivery Turnaround</div></div>
   <div class="stat"><div class="sn">HDR</div><div class="sl">Flambient Workflow</div></div>
@@ -173,25 +168,25 @@ footer a:hover{color:var(--gold)}
     <h2 class="section-title">The Portfolio</h2>
   </div>
   <div class="masonry">
-    <div class="gi" onclick="openLb(this)"><img src="images/kitchen-5.jpg" alt="Kitchen" loading="lazy"><div class="go"><span class="gt">Kitchen</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/kitchen-1.jpg" alt="Kitchen" loading="lazy"><div class="go"><span class="gt">Kitchen</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/master-bedroom.jpg" alt="Master Bedroom" loading="lazy"><div class="go"><span class="gt">Master Bedroom</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/luxury-bathroom.jpg" alt="Luxury Bathroom" loading="lazy"><div class="go"><span class="gt">Luxury Bathroom</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/bathroom.jpg" alt="Bathroom" loading="lazy"><div class="go"><span class="gt">Bathroom</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/open-plan-living.jpg" alt="Open Plan Living" loading="lazy"><div class="go"><span class="gt">Open Plan Living</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/kitchen-2.jpg" alt="Kitchen" loading="lazy"><div class="go"><span class="gt">Kitchen</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/kitchen-3.jpg" alt="Kitchen" loading="lazy"><div class="go"><span class="gt">Kitchen</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/exterior.jpg" alt="Exterior" loading="lazy"><div class="go"><span class="gt">Exterior</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/pool-outdoor.jpg" alt="Pool &amp; Outdoor" loading="lazy"><div class="go"><span class="gt">Pool &amp; Outdoor</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/pool-area.jpg" alt="Pool Area" loading="lazy"><div class="go"><span class="gt">Pool Area</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/living-dining.jpg" alt="Living &amp; Dining" loading="lazy"><div class="go"><span class="gt">Living &amp; Dining</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/open-plan.jpg" alt="Open Plan" loading="lazy"><div class="go"><span class="gt">Open Plan</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/bathroom-2.jpg" alt="Bathroom" loading="lazy"><div class="go"><span class="gt">Bathroom</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/bedroom.jpg" alt="Bedroom" loading="lazy"><div class="go"><span class="gt">Bedroom</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/kitchen-4.jpg" alt="Kitchen" loading="lazy"><div class="go"><span class="gt">Kitchen</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/exterior-2.jpg" alt="Exterior" loading="lazy"><div class="go"><span class="gt">Exterior</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/aerial-view.jpg" alt="Aerial View" loading="lazy"><div class="go"><span class="gt">Aerial View</span></div></div>
-    <div class="gi" onclick="openLb(this)"><img src="images/loft-interior.jpg" alt="Interior" loading="lazy"><div class="go"><span class="gt">Interior</span></div></div>
+    <div class="gi" onclick="openLb('images/kitchen-5.jpg')"><img src="images/kitchen-5.jpg" alt="Kitchen" loading="lazy"><div class="go"><span class="gt">Kitchen</span></div></div>
+    <div class="gi" onclick="openLb('images/kitchen-1.jpg')"><img src="images/kitchen-1.jpg" alt="Kitchen" loading="lazy"><div class="go"><span class="gt">Kitchen</span></div></div>
+    <div class="gi" onclick="openLb('images/master-bedroom.jpg')"><img src="images/master-bedroom.jpg" alt="Master Bedroom" loading="lazy"><div class="go"><span class="gt">Master Bedroom</span></div></div>
+    <div class="gi" onclick="openLb('images/luxury-bathroom.jpg')"><img src="images/luxury-bathroom.jpg" alt="Luxury Bathroom" loading="lazy"><div class="go"><span class="gt">Luxury Bathroom</span></div></div>
+    <div class="gi" onclick="openLb('images/bathroom.jpg')"><img src="images/bathroom.jpg" alt="Bathroom" loading="lazy"><div class="go"><span class="gt">Bathroom</span></div></div>
+    <div class="gi" onclick="openLb('images/open-plan-living.jpg')"><img src="images/open-plan-living.jpg" alt="Open Plan Living" loading="lazy"><div class="go"><span class="gt">Open Plan Living</span></div></div>
+    <div class="gi" onclick="openLb('images/kitchen-2.jpg')"><img src="images/kitchen-2.jpg" alt="Kitchen" loading="lazy"><div class="go"><span class="gt">Kitchen</span></div></div>
+    <div class="gi" onclick="openLb('images/kitchen-3.jpg')"><img src="images/kitchen-3.jpg" alt="Kitchen" loading="lazy"><div class="go"><span class="gt">Kitchen</span></div></div>
+    <div class="gi" onclick="openLb('images/exterior.jpg')"><img src="images/exterior.jpg" alt="Exterior" loading="lazy"><div class="go"><span class="gt">Exterior</span></div></div>
+    <div class="gi" onclick="openLb('images/pool-outdoor.jpg')"><img src="images/pool-outdoor.jpg" alt="Pool &amp; Outdoor" loading="lazy"><div class="go"><span class="gt">Pool &amp; Outdoor</span></div></div>
+    <div class="gi" onclick="openLb('images/pool-area.jpg')"><img src="images/pool-area.jpg" alt="Pool Area" loading="lazy"><div class="go"><span class="gt">Pool Area</span></div></div>
+    <div class="gi" onclick="openLb('images/living-dining.jpg')"><img src="images/living-dining.jpg" alt="Living &amp; Dining" loading="lazy"><div class="go"><span class="gt">Living &amp; Dining</span></div></div>
+    <div class="gi" onclick="openLb('images/open-plan.jpg')"><img src="images/open-plan.jpg" alt="Open Plan" loading="lazy"><div class="go"><span class="gt">Open Plan</span></div></div>
+    <div class="gi" onclick="openLb('images/bathroom-2.jpg')"><img src="images/bathroom-2.jpg" alt="Bathroom" loading="lazy"><div class="go"><span class="gt">Bathroom</span></div></div>
+    <div class="gi" onclick="openLb('images/bedroom.jpg')"><img src="images/bedroom.jpg" alt="Bedroom" loading="lazy"><div class="go"><span class="gt">Bedroom</span></div></div>
+    <div class="gi" onclick="openLb('images/kitchen-4.jpg')"><img src="images/kitchen-4.jpg" alt="Kitchen" loading="lazy"><div class="go"><span class="gt">Kitchen</span></div></div>
+    <div class="gi" onclick="openLb('images/exterior-2.jpg')"><img src="images/exterior-2.jpg" alt="Exterior" loading="lazy"><div class="go"><span class="gt">Exterior</span></div></div>
+    <div class="gi" onclick="openLb('images/aerial-view.jpg')"><img src="images/aerial-view.jpg" alt="Aerial View" loading="lazy"><div class="go"><span class="gt">Aerial View</span></div></div>
+    <div class="gi" onclick="openLb('images/loft-interior.jpg')"><img src="images/loft-interior.jpg" alt="Interior" loading="lazy"><div class="go"><span class="gt">Interior</span></div></div>
   </div>
 </section>
 
@@ -239,33 +234,38 @@ footer a:hover{color:var(--gold)}
   <a href="mailto:aikhojestudios@gmail.com">aikhojestudios@gmail.com</a>
 </footer>
 
-<div class="lb" id="lb" onclick="closeLb()" style="display:none">
-  <button class="lb-close" onclick="closeLb()">&times;</button>
-  <img id="lb-img" alt="" style="display:none">
+<!-- LIGHTBOX: created entirely by JS, no stray HTML img tags -->
+<div id="lb" onclick="closeLb()">
+  <button id="lb-close" onclick="closeLb()">&times;</button>
 </div>
 
 <script>
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 60));
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('vis'), i * 70);
-      obs.unobserve(e.target);
-    }
-  });
-}, {threshold: 0.08});
-document.querySelectorAll('.stats,.about,.gi,.sc,.process,.cta').forEach(el => obs.observe(el));
-function openLb(el) {
-  document.getElementById('lb-img').src = el.querySelector('img').src;
-  document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').style.display='block';
+window.addEventListener('scroll', () =>
+  document.getElementById('nav').classList.toggle('scrolled', scrollY > 60)
+);
+
+function openLb(src) {
+  var lb = document.getElementById('lb');
+  var img = document.createElement('img');
+  img.id = 'lb-img';
+  img.src = src;
+  // remove any previous image
+  var old = lb.querySelector('img');
+  if (old) lb.removeChild(old);
+  lb.appendChild(img);
+  lb.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 function closeLb() {
-  document.getElementById('lb').style.display='none';
+  var lb = document.getElementById('lb');
+  lb.classList.remove('open');
   document.body.style.overflow = '';
+  var img = lb.querySelector('img');
+  if (img) lb.removeChild(img);
 }
-document.addEventListener('keydown', e => { if(e.key==='Escape') closeLb(); });
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLb();
+});
 </script>
 </body>
 </html>
