@@ -239,9 +239,9 @@ footer a:hover{color:var(--gold)}
   <a href="mailto:aikhojestudios@gmail.com">aikhojestudios@gmail.com</a>
 </footer>
 
-<div class="lb" id="lb" onclick="closeLb()">
+<div class="lb" id="lb" onclick="closeLb()" style="display:none">
   <button class="lb-close" onclick="closeLb()">&times;</button>
-  <img id="lb-img" src="" alt="">
+  <img id="lb-img" src="" alt="" style="display:none">
 </div>
 
 <script>
@@ -258,11 +258,11 @@ const obs = new IntersectionObserver((entries) => {
 document.querySelectorAll('.stats,.about,.gi,.sc,.process,.cta').forEach(el => obs.observe(el));
 function openLb(el) {
   document.getElementById('lb-img').src = el.querySelector('img').src;
-  document.getElementById('lb').classList.add('open');
+  document.getElementById('lb').style.display='flex'; document.getElementById('lb-img').style.display='block';
   document.body.style.overflow = 'hidden';
 }
 function closeLb() {
-  document.getElementById('lb').classList.remove('open');
+  document.getElementById('lb').style.display='none';
   document.body.style.overflow = '';
 }
 document.addEventListener('keydown', e => { if(e.key==='Escape') closeLb(); });
