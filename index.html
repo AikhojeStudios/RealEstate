@@ -170,16 +170,7 @@ nav.on .nav-links a { color: var(--mid); }
 }
 .gi img { width: 100%; display: block; transition: transform .7s ease; }
 .gi:hover img { transform: scale(1.05); }
-.gi-label {
-  position: absolute; bottom: 0; left: 0; right: 0;
-  padding: 2rem 1.2rem .9rem;
-  background: linear-gradient(transparent, rgba(0,0,0,.55));
-  opacity: 0; transition: opacity .35s;
-}
-.gi:hover .gi-label { opacity: 1; }
-.gi-label span {
-  font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: #fff;
-}
+
 
 /* ── SERVICES ── */
 .services { background: var(--warm); padding: 7rem 5rem; }
@@ -346,25 +337,25 @@ footer a:hover { color: var(--gold); }
     <h2 class="section-h2">The Portfolio</h2>
   </div>
   <div class="masonry">
-    <div class="gi" onclick="lb('images/kitchen-5.jpg')"><img src="images/kitchen-5.jpg" alt="Kitchen" loading="lazy"><div class="gi-label"><span>Kitchen</span></div></div>
-    <div class="gi" onclick="lb('images/kitchen-1.jpg')"><img src="images/kitchen-1.jpg" alt="Kitchen" loading="lazy"><div class="gi-label"><span>Kitchen</span></div></div>
-    <div class="gi" onclick="lb('images/master-bedroom.jpg')"><img src="images/master-bedroom.jpg" alt="Master Bedroom" loading="lazy"><div class="gi-label"><span>Master Bedroom</span></div></div>
-    <div class="gi" onclick="lb('images/luxury-bathroom.jpg')"><img src="images/luxury-bathroom.jpg" alt="Luxury Bathroom" loading="lazy"><div class="gi-label"><span>Luxury Bathroom</span></div></div>
-    <div class="gi" onclick="lb('images/bathroom.jpg')"><img src="images/bathroom.jpg" alt="Bathroom" loading="lazy"><div class="gi-label"><span>Bathroom</span></div></div>
-    <div class="gi" onclick="lb('images/open-plan-living.jpg')"><img src="images/open-plan-living.jpg" alt="Open Plan Living" loading="lazy"><div class="gi-label"><span>Open Plan Living</span></div></div>
-    <div class="gi" onclick="lb('images/kitchen-2.jpg')"><img src="images/kitchen-2.jpg" alt="Kitchen" loading="lazy"><div class="gi-label"><span>Kitchen</span></div></div>
-    <div class="gi" onclick="lb('images/kitchen-3.jpg')"><img src="images/kitchen-3.jpg" alt="Kitchen" loading="lazy"><div class="gi-label"><span>Kitchen</span></div></div>
-    <div class="gi" onclick="lb('images/exterior.jpg')"><img src="images/exterior.jpg" alt="Exterior" loading="lazy"><div class="gi-label"><span>Exterior</span></div></div>
-    <div class="gi" onclick="lb('images/pool-outdoor.jpg')"><img src="images/pool-outdoor.jpg" alt="Pool &amp; Outdoor" loading="lazy"><div class="gi-label"><span>Pool &amp; Outdoor</span></div></div>
-    <div class="gi" onclick="lb('images/pool-area.jpg')"><img src="images/pool-area.jpg" alt="Pool Area" loading="lazy"><div class="gi-label"><span>Pool Area</span></div></div>
-    <div class="gi" onclick="lb('images/living-dining.jpg')"><img src="images/living-dining.jpg" alt="Living &amp; Dining" loading="lazy"><div class="gi-label"><span>Living &amp; Dining</span></div></div>
-    <div class="gi" onclick="lb('images/open-plan.jpg')"><img src="images/open-plan.jpg" alt="Open Plan" loading="lazy"><div class="gi-label"><span>Open Plan</span></div></div>
-    <div class="gi" onclick="lb('images/bathroom-2.jpg')"><img src="images/bathroom-2.jpg" alt="Bathroom" loading="lazy"><div class="gi-label"><span>Bathroom</span></div></div>
-    <div class="gi" onclick="lb('images/bedroom.jpg')"><img src="images/bedroom.jpg" alt="Bedroom" loading="lazy"><div class="gi-label"><span>Bedroom</span></div></div>
-    <div class="gi" onclick="lb('images/kitchen-4.jpg')"><img src="images/kitchen-4.jpg" alt="Kitchen" loading="lazy"><div class="gi-label"><span>Kitchen</span></div></div>
-    <div class="gi" onclick="lb('images/exterior-2.jpg')"><img src="images/exterior-2.jpg" alt="Aerial View" loading="lazy"><div class="gi-label"><span>Aerial View</span></div></div>
-    <div class="gi" onclick="lb('images/aerial-view.jpg')"><img src="images/aerial-view.jpg" alt="Aerial View" loading="lazy"><div class="gi-label"><span>Aerial View</span></div></div>
-    <div class="gi" onclick="lb('images/loft-interior.jpg')"><img src="images/loft-interior.jpg" alt="Interior" loading="lazy"><div class="gi-label"><span>Interior</span></div></div>
+    <div class="gi" onclick="lb('images/kitchen-5.jpg')"><img src="images/kitchen-5.jpg" alt="Kitchen" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/kitchen-1.jpg')"><img src="images/kitchen-1.jpg" alt="Kitchen" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/master-bedroom.jpg')"><img src="images/master-bedroom.jpg" alt="Master Bedroom" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/luxury-bathroom.jpg')"><img src="images/luxury-bathroom.jpg" alt="Luxury Bathroom" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/bathroom.jpg')"><img src="images/bathroom.jpg" alt="Bathroom" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/open-plan-living.jpg')"><img src="images/open-plan-living.jpg" alt="Open Plan Living" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/kitchen-2.jpg')"><img src="images/kitchen-2.jpg" alt="Kitchen" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/kitchen-3.jpg')"><img src="images/kitchen-3.jpg" alt="Kitchen" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/exterior.jpg')"><img src="images/exterior.jpg" alt="Exterior" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/pool-outdoor.jpg')"><img src="images/pool-outdoor.jpg" alt="Pool &amp; Outdoor" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/pool-area.jpg')"><img src="images/pool-area.jpg" alt="Pool Area" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/living-dining.jpg')"><img src="images/living-dining.jpg" alt="Living &amp; Dining" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/open-plan.jpg')"><img src="images/open-plan.jpg" alt="Open Plan" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/bathroom-2.jpg')"><img src="images/bathroom-2.jpg" alt="Bathroom" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/bedroom.jpg')"><img src="images/bedroom.jpg" alt="Bedroom" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/kitchen-4.jpg')"><img src="images/kitchen-4.jpg" alt="Kitchen" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/exterior-2.jpg')"><img src="images/exterior-2.jpg" alt="Aerial View" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/aerial-view.jpg')"><img src="images/aerial-view.jpg" alt="Aerial View" loading="lazy"></div>
+    <div class="gi" onclick="lb('images/loft-interior.jpg')"><img src="images/loft-interior.jpg" alt="Interior" loading="lazy"></div>
   </div>
 </section>
 
